@@ -17,15 +17,15 @@ class Profile extends React.Component{
   chooseData(){
     switch(this.state.profileInfo){
       case 'Personal':
-        return <Personal />
+        return <Personal timeOut={this.props.timeOut}/>
       case 'Experience':
-        return <Experience />
+        return <Experience timeOut={this.props.timeOut}/>
       case 'Education':
-        return <Education />
+        return <Education timeOut={this.props.timeOut}/>
       case 'Skills':
-        return <Skills />
+        return <Skills timeOut={this.props.timeOut}/>
       default:
-        return <Personal />
+        return <Personal timeOut={this.props.timeOut}/>
     }
   }
 
