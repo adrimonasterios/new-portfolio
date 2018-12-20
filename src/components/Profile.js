@@ -4,6 +4,7 @@ import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
 import meRound from '../images/me-round.png';
+import {CSSTransition} from 'react-transition-group';
 
 class Profile extends React.Component{
   constructor(){
@@ -41,24 +42,26 @@ class Profile extends React.Component{
 
   render(){
     return(
-      <div className="profile">
-        <div className="profile-left">
-          <div className="data-screen">
-            {this.chooseData()}
+      <CSSTransition classNames="fade" timeout={this.props.timeOut} in={true} appear={true}>
+          <div className='profile'>
+            <div className="profile-left">
+              <div className="data-screen">
+                {this.chooseData()}
+              </div>
+              <ul>
+                <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Personal")}}>Personal</li>
+                <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Experience")}}>Experience</li>
+                <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Education")}}>Education</li>
+                <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Skills")}}>Skills</li>
+              </ul>
+            </div>
+            <div className="profile-right">
+              <img src={meRound} alt="rounded-me" />
+              <p>I am someone that makes things happen in a creative, logical and efficient way.</p>
+              <p>“Everything you can imagine is Real”<br />- Pablo Picasso</p>
+            </div>
           </div>
-          <ul>
-            <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Personal")}}>Personal</li>
-            <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Experience")}}>Experience</li>
-            <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Education")}}>Education</li>
-            <li onClick={e => this.changeData(e)} style={{borderBottom: this.selectedProfileTab("Skills")}}>Skills</li>
-          </ul>
-        </div>
-        <div className="profile-right">
-          <img src={meRound} alt="rounded-me" />
-          <p>I am someone that makes things happen in a creative, logical and efficient way.</p>
-          <p>“Everything you can imagine is Real”<br />- Pablo Picasso</p>
-        </div>
-      </div>
+      </CSSTransition>
     );
   }
 }

@@ -12,21 +12,22 @@ class App extends React.Component{
     super();
     this.state={
       showComponent: 'Home',
+      timeOut: 400
     }
   }
 
   chooseComponent(){
     switch(this.state.showComponent){
       case 'Home':
-        return <Home />
+        return <Home timeOut={this.state.timeOut}/>
       case 'Profile':
-        return <Profile />
+        return <Profile timeOut={this.state.timeOut}/>
       case 'Projects':
-        return <Projects />
+        return <Projects timeOut={this.state.timeOut}/>
       case 'Contact':
-        return <Contact />
+        return <Contact timeOut={this.state.timeOut}/>
       default:
-        return <Home />
+        return <Home timeOut={this.state.timeOut}/>
     }
   }
 
@@ -52,7 +53,7 @@ class App extends React.Component{
             <li onClick={e => this.changeComponent(e)} style={{color: this.selectedTab('Contact')}}>Contact</li>
           </nav>
         </div>
-        {this.chooseComponent()}
+            {this.chooseComponent()}
       </div>
     );
   }
