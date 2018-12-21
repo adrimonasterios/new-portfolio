@@ -10,10 +10,10 @@ const Education = (props) => {
           <p className="exp-1">2018</p><p className="exp-2">Full Stack Web Development</p><p className="exp-3">Wyncode Academy</p><p className="exp-4">USA</p>
         </div>
         <div className="education-row">
-          <p className="exp-1">2016</p><p className="exp-2">Marketing and Sales (Certificate Program)</p><p className="exp-3">Universidad Privada Boliviana</p><p className="exp-4">Bolivia</p>
+          <p className="exp-1">2016</p><p className="exp-2">Marketing and Sales</p><p className="exp-3">Universidad Privada Boliviana</p><p className="exp-4">Bolivia</p>
         </div>
         <div className="education-row">
-          <p className="exp-1">2016</p><p className="exp-2">Photography (Certificate Program)</p><p className="exp-3">Instituto Da Vinci</p><p className="exp-4">Bolivia</p>
+          <p className="exp-1">2016</p><p className="exp-2">Photography</p><p className="exp-3">Instituto Da Vinci</p><p className="exp-4">Bolivia</p>
         </div>
         <div className="education-row">
           <p className="exp-1">2011</p><p className="exp-2">Exchange Program</p><p className="exp-3">Universität zu Köln</p><p className="exp-4">Germany</p>

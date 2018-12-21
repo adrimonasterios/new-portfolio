@@ -31,15 +31,23 @@ const Skills = (props) => {
             <p className="skill">Ruby on Rails</p>
             <progress value="65" max="100"></progress>
           </div>
+          <div className="skills-item">
+            <p className="skill">React Native</p>
+            <progress value="50" max="100"></progress>
+          </div>
+          <div className="skills-item">
+            <p className="skill">Git</p>
+            <progress value="70" max="100"></progress>
+          </div>
         </div>
         <h2>Design Skills</h2>
         <div className="skill-group">
           <div className="skills-item">
-            <p className="skill">Adobe Photoshop</p>
+            <p className="skill">Photoshop</p>
             <progress value="90" max="100"></progress>
           </div>
           <div className="skills-item">
-            <p className="skill">Adobe Illustrator</p>
+            <p className="skill">Illustrator</p>
             <progress value="70" max="100"></progress>
           </div>
           <div className="skills-item">

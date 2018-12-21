@@ -17,7 +17,7 @@ const Contact = (props) =>{
             <a href="https://www.instagram.com/adrimonasterios/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" />adrimonasterios</a>
           </div>
           <div className="contact-item">
-            <p><i className="far fa-envelope" />adri.monasterios@gmail.com</p>
+            <p><i className="far fa-envelope" />adri.monasterios&#8203;@gmail.com</p>
           </div>
         </div>
         <div className="contact-right">
