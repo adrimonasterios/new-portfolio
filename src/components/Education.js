@@ -7,9 +7,6 @@ const Education = (props) => {
       <div className="data">
         <h2>Education</h2>
         <div className="education-row">
-          <p className="exp-1">2018</p><p className="exp-2">Full Stack Web Development</p><p className="exp-3">Wyncode Academy</p><p className="exp-4">USA</p>
-        </div>
-        <div className="education-row">
           <p className="exp-1">2016</p><p className="exp-2">Marketing and Sales</p><p className="exp-3">Universidad Privada Boliviana</p><p className="exp-4">Bolivia</p>
         </div>
         <div className="education-row">
@@ -30,3 +27,8 @@ const Education = (props) => {
 }
 
 export default Education;
+
+
+// <div className="education-row">
+//   <p className="exp-1">2018</p><p className="exp-2">Full Stack Web Development</p><p className="exp-3">Wyncode Academy</p><p className="exp-4">USA</p>
+// </div>
